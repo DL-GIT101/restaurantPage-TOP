@@ -6,9 +6,9 @@ const createContent =  () => {
     content.setAttribute("id","content");
     document.body.appendChild(content);
 }
-
-createContent();
 landingPage();
+createContent();
+
 
 /* 
        <div class="about">
