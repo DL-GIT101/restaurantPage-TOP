@@ -1,4 +1,4 @@
-import  landingPage from './landing-page';
+import  navbar from './navbar';
 import './style.css';
 
 const createContent =  () => {
@@ -6,7 +6,7 @@ const createContent =  () => {
     content.setAttribute("id","content");
     document.body.appendChild(content);
 }
-landingPage();
+navbar();
 createContent();
 
 
