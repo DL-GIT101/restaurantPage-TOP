@@ -21,6 +21,11 @@ body > * {
     padding: 0  15%;
 }
 
+img {
+    height: 500px;
+    width: 500px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -65,8 +70,10 @@ nav > ul > li:hover {
     background-color: var(--color-light-green);
 }
 
-
-img {
-    height: 500px;
-    width: 500px;
+.footer {
+    text-align: center;
+    color: var(--color-light-green);
+    background-color: var(--color-blue);
+    padding: 10px 0;
+    box-shadow: -2px -2px 8px 0 rgba(0, 0, 0, 0.2), 1px -2px 20px 0 rgba(0, 0, 0, 0.19);
 }
