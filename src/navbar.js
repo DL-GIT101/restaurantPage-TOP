@@ -26,10 +26,10 @@ const navMake = () => {
     return nav;
 }
 
-const landingPage = () => {
+const navbar = () => {
     const body = document.querySelector("body");
     const nav = navMake();
     body.appendChild(nav);
 }
 
-export default landingPage;
+export default navbar;
