@@ -6,9 +6,13 @@ const createContent =  () => {
     content.setAttribute("id","content");
     document.body.appendChild(content);
 }
-navbar();
-createContent();
 
+const initialLoad = () => {
+    navbar();
+    createContent();
+}
+
+initialLoad();
 
 /* 
        <div class="about">

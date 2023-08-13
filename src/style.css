@@ -18,7 +18,7 @@ body {
 }
 
 body > * {
-    margin: 0  15%;
+    padding: 0  15%;
 }
 
 nav {
@@ -26,12 +26,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     color: var(--color-lime);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 nav > .logo {
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: filter 0.5s ease;
 }
 
 nav > .logo:hover{
@@ -42,6 +44,25 @@ nav > .logo > .icon {
     height: 50px;
     width: 50px;
     margin-left: 10px;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+}
+
+nav > ul > li {
+    padding: 40px 70px; 
+    cursor: pointer;
+    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+
+nav > ul > li:hover {
+    color: var(--color-green);
+    background-color: var(--color-light-green);
 }
 
 
