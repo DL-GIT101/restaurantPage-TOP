@@ -70,6 +70,38 @@ nav > ul > li:hover {
     background-color: var(--color-light-green);
 }
 
+#content {
+    padding: 0;
+}
+
+#content > .view {
+    width: 100%;
+    height: fit-content;
+}
+
+#content > .testimonies {
+    padding: 5%  15%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-light-green);
+}
+
+#content > .testimonies > .card {
+    text-align: center;
+    color: var(--color-blue);
+    border: 2px solid var(--color-green) ;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--color-lime);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#content > .testimonies > .card > img {
+    width: 250px;
+    height: fit-content;
+    border-radius: 10px;
+}
+
 .footer {
     text-align: center;
     color: var(--color-light-green);
