@@ -18,7 +18,7 @@ const navMake = () => {
 }
 
 const landingPage = () => {
-    const content = document.getElementById("content");
+    const body = document.querySelector("body");
     const nav = navMake();
     content.appendChild(nav);
 }
