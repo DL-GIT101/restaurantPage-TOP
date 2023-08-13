@@ -1,5 +1,6 @@
 import  navbar from './navbar';
 import footer from './footer';
+import aboutPage from './about';
 import './style.css';
 
 const createContent =  () => {
@@ -11,6 +12,7 @@ const createContent =  () => {
 const initialLoad = () => {
     navbar();
     createContent();
+    aboutPage();
     footer();
 }
 
