@@ -13,8 +13,8 @@ const navMake = () => {
     icon.className = "icon";
     logo.append(restaurantName,icon);
 //tabs
-    const tabs = document.createElement('ol');
-    const tabsArray = ["Menu", "About", "Contact"];
+    const tabs = document.createElement('ul');
+    const tabsArray = ["About", "Menu", "Contact"];
     tabsArray.forEach(tab => {
         const li = document.createElement('li');
         li.innerHTML = tab;
