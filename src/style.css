@@ -1,3 +1,26 @@
+@import url("https://unpkg.com/normalize.css");
+
+:root {
+    --color-blue: #213363;
+    --color-green: #17594A;
+    --color-light-green: #8EAC50;
+    --color-lime: #D3D04F;
+}
+
+body {
+    background-color: #213363;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+   
+}
+
+body > * {
+    margin: 0  15%;
+}
+
 img {
     height: 500px;
     width: 500px;
