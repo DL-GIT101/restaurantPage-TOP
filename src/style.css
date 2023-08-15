@@ -147,6 +147,18 @@ nav > ul > li.active {
     border-radius: 10px;
 }
 
+#content > .contact {
+    margin: 10% 50% 5% 5%;
+    padding: 2rem;
+    background-color: var(--color-lime);
+    color: var(--color-blue);
+    border-radius: 10px;
+}
+
+#content > .contact > div > p {
+    margin: 0;
+}
+
 .footer {
     text-align: center;
     color: var(--color-green);

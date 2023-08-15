@@ -12,6 +12,7 @@ import dish1 from './img/menu/bountiful_fire.jpg';
 import dish2 from './img/menu/elves_ear.jpg';
 import dish3 from './img/menu/red_string.jpg';
 import dish4 from './img/menu/sunrise_chicken.jpg';
+import contactPage from './contact';
 
 
 const createContent =  () => {
@@ -92,11 +93,11 @@ const initialLoad = () => {
         activeTab(1);
         menuPage(dishes);
     })
-   /* tabs[2].addEventListener('click', () =>{
+   tabs[2].addEventListener('click', () =>{
         eraseContent();
         activeTab(3);
-        aboutPage();
-    }) */
+        contactPage();
+    })
 }
 
 initialLoad();
