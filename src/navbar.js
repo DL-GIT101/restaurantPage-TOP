@@ -1,4 +1,4 @@
-const navMake = () => {
+const navMake = (iconSRC) => {
     const nav = document.createElement('nav');
 //logo
     const logo = document.createElement('div');
@@ -9,7 +9,7 @@ const navMake = () => {
     //icon
     const icon = document.createElement('object');
     icon.setAttribute("type", "image/svg+xml");
-    icon.setAttribute("data", "../src/img/leaf.svg");
+    icon.setAttribute("data", iconSRC);
     icon.className = "icon";
     logo.append(restaurantName,icon);
 //tabs
@@ -26,9 +26,9 @@ const navMake = () => {
     return nav;
 }
 
-const navbar = () => {
+const navbar = (icon) => {
     const body = document.querySelector("body");
-    const nav = navMake();
+    const nav = navMake(icon);
     body.appendChild(nav);
 }
 

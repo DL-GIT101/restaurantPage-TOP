@@ -1,4 +1,5 @@
 import  navbar from './navbar';
+import icon from './img/leaf.svg';
 import footer from './footer';
 import aboutPage from './about';
 import './style.css';
@@ -10,7 +11,7 @@ const createContent =  () => {
 }
 
 const initialLoad = () => {
-    navbar();
+    navbar(icon);
     createContent();
     aboutPage();
     footer();
