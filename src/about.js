@@ -23,9 +23,23 @@ const makeTestimonyCard = (comment,source) => {
     return card;
 }
 
+const makeAbout = () => {
+    const about = document.createElement('div');
+    about.className = "about";
+
+    const para = document.createElement('p');
+    para.innerHTML = '"Serving you the gifts from Mother Nature combined with skills from our talented cooks bringing you the freshness into your taste buds"';
+
+    about.appendChild(para);
+
+    return about;
+}
+
 const aboutPage = (view,testimonyArray) => {
     const content = document.querySelector('#content');
     const bigImage = makeBigImage(view);
+
+    const about = makeAbout();
 
     const testimonies = document.createElement('div');
     testimonies.className = "testimonies";
@@ -35,7 +49,8 @@ const aboutPage = (view,testimonyArray) => {
         testimonies.appendChild(card);
     });
 
-    content.append(bigImage,testimonies);
+
+    content.append(bigImage,about,testimonies);
 }
 
 export default aboutPage;

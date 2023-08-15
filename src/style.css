@@ -79,6 +79,13 @@ nav > ul > li:hover {
     height: fit-content;
 }
 
+#content > .about {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    color: var(--color-light-green);
+}
+
 #content > .testimonies {
     padding: 5%  15%;
     display: flex;
@@ -104,7 +111,7 @@ nav > ul > li:hover {
 
 .footer {
     text-align: center;
-    color: var(--color-light-green);
+    color: var(--color-green);
     background-color: var(--color-blue);
     padding: 10px 0;
     box-shadow: -2px -2px 8px 0 rgba(0, 0, 0, 0.2), 1px -2px 20px 0 rgba(0, 0, 0, 0.19);
