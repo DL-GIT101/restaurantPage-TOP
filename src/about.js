@@ -1,26 +1,11 @@
-const makeBigImage = () => {
+const makeBigImage = (img) => {
     const image  = document.createElement('img');
-    image.setAttribute("src", "../src/img/restaurant-view.jpg");
+    image.setAttribute("src", img);
     image.setAttribute("alt","Restaurant View");
     image.className = "view";
 
     return image;
 }
-
-const testimonyArray = [
-    {
-        comment:'"Superb Menu"',
-        imgSrc:"../src/img/testimony-1.jpg"
-    },
-    {
-        comment:'"You can taste freshness"',
-        imgSrc:"../src/img/testimony-2.jpg"
-    },
-    {
-        comment:'"Be one with nature"',
-        imgSrc:"../src/img/testimony-3.jpg"
-    }
-];
 
 const makeTestimonyCard = (comment,source) => {
     const card = document.createElement('div');
@@ -38,9 +23,9 @@ const makeTestimonyCard = (comment,source) => {
     return card;
 }
 
-const aboutPage = () => {
+const aboutPage = (view,testimonyArray) => {
     const content = document.querySelector('#content');
-    const bigImage = makeBigImage();
+    const bigImage = makeBigImage(view);
 
     const testimonies = document.createElement('div');
     testimonies.className = "testimonies";
