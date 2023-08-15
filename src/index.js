@@ -1,3 +1,4 @@
+import './style.css';
 import  navbar from './navbar';
 import icon from './img/leaf.svg';
 import footer from './footer';
@@ -6,7 +7,7 @@ import restaurantView from './img/restaurant-view.jpg';
 import testimony1 from './img/testimony-1.jpg';
 import testimony2 from './img/testimony-2.jpg';
 import testimony3 from './img/testimony-3.jpg';
-import './style.css';
+import menuPage from './menu';
 
 const createContent =  () => {
     const content = document.createElement('div');
@@ -55,6 +56,23 @@ const initialLoad = () => {
     createContent();
     aboutPage(restaurantView,testimonyArray);
     footer();
+
+    const tabs = document.querySelectorAll('nav > ul > li');
+    tabs[0].addEventListener('click', () =>{
+        eraseContent();
+        activeTab(0);
+        aboutPage(restaurantView,testimonyArray);
+    })
+    tabs[1].addEventListener('click', () =>{
+        eraseContent();
+        activeTab(1);
+        menuPage();
+    })
+   /* tabs[2].addEventListener('click', () =>{
+        eraseContent();
+        activeTab(3);
+        aboutPage();
+    }) */
 }
 
 initialLoad();
