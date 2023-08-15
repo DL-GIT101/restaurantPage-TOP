@@ -8,6 +8,11 @@ import testimony1 from './img/testimony-1.jpg';
 import testimony2 from './img/testimony-2.jpg';
 import testimony3 from './img/testimony-3.jpg';
 import menuPage from './menu';
+import dish1 from './img/menu/bountiful_fire.jpg';
+import dish2 from './img/menu/elves_ear.jpg';
+import dish3 from './img/menu/red_string.jpg';
+import dish4 from './img/menu/sunrise_chicken.jpg';
+
 
 const createContent =  () => {
     const content = document.createElement('div');
@@ -50,6 +55,25 @@ const testimonyArray = [
     }
 ];
 
+const dishes = [
+    {
+        src: dish1,
+        name: "Bountiful Fire"
+    },
+    {
+        src: dish2,
+        name: "Elves Ear"
+    },
+    {
+        src: dish3,
+        name: "Red String of Fate"
+    },
+    {
+        src: dish4,
+        name: "Sunrise Chicken"
+    }
+];
+
 const initialLoad = () => {
     navbar(icon);
     activeTab(0);
@@ -66,7 +90,7 @@ const initialLoad = () => {
     tabs[1].addEventListener('click', () =>{
         eraseContent();
         activeTab(1);
-        menuPage();
+        menuPage(dishes);
     })
    /* tabs[2].addEventListener('click', () =>{
         eraseContent();

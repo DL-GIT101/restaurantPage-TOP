@@ -114,6 +114,39 @@ nav > ul > li.active {
     border-radius: 10px;
 }
 
+#content > .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    background-color: var(--color-blue);
+    color: var(--color-light-green);
+    justify-items: center;
+    margin: 5% 20%;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#content > .menu > p {
+    grid-column: 1 / -1;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#content > .menu > div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--color-light-green);
+    color: var(--color-green);
+}
+
+#content > .menu > div > img{
+    width: 250px;
+    height: fit-content;
+    border-radius: 10px;
+}
+
 .footer {
     text-align: center;
     color: var(--color-green);
