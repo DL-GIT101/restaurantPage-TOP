@@ -14,6 +14,17 @@ const createContent =  () => {
     document.body.appendChild(content);
 }
 
+const activeTab = (index) => {
+    const tabs = document.querySelectorAll('nav > ul > li');
+    for (let i = 0; i < tabs.length; i++) {
+        if(i === index){
+            tabs[i].classList.add("active");
+        }else{
+            tabs[i].classList.remove("active");
+        }
+    }
+}
+
 const testimonyArray = [
     {
         comment:'"Superb Menu"',
@@ -31,6 +42,7 @@ const testimonyArray = [
 
 const initialLoad = () => {
     navbar(icon);
+    activeTab(0);
     createContent();
     aboutPage(restaurantView,testimonyArray);
     footer();
