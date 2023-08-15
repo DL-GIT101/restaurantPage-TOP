@@ -25,6 +25,15 @@ const activeTab = (index) => {
     }
 }
 
+const eraseContent = () => {
+    const content = document.querySelector('#content');
+     let lastChild = content.lastElementChild;
+        while(lastChild){
+            content.removeChild(lastChild);
+            lastChild = content.lastElementChild;
+        }
+}
+
 const testimonyArray = [
     {
         comment:'"Superb Menu"',
